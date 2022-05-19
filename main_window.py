@@ -39,7 +39,7 @@ class image_detection(QtCore.QThread):
         self.img_path=img_path
 
     def run(self):
-        output_path = "D:/CUST/yolo/TensorFlow-2.x-YOLOv3/detection/detection.jpg"
+        output_path = "detection/detection.jpg"
         label=detect_image_gui(self.yolo, self.img_path, output_path, input_size=320, show=False,
                    rectangle_colors=(255, 0, 0))
 
